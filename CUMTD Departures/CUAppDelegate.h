@@ -7,9 +7,24 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <CoreLocation/CoreLocation.h>
+#import "AFNetworking/AFNetworking.h"
 
-@interface CUAppDelegate : NSObject <NSApplicationDelegate>
+@interface CUAppDelegate : NSObject <NSApplicationDelegate, CLLocationManagerDelegate>
+{
+    IBOutlet NSMenu *statusMenu;
+    NSStatusItem *statusItem;
+    NSImage *statusImage;
+    CLLocationManager *manager;
+    NSURL *baseURL;
+    AFHTTPClient *client;
+}
 
-@property (assign) IBOutlet NSWindow *window;
+- (IBAction)RefreshClicked:(id)sender;
+
+
+@property (retain) CLLocationManager *manager;
+
+//@property (assign) IBOutlet NSMenu *statusMenu;
 
 @end
