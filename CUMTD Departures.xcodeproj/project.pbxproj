@@ -11,6 +11,8 @@
 		7F198B2A174DAC15003EAB5C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F198B28174DAC15003EAB5C /* SystemConfiguration.framework */; };
 		7F198B2C174DBA6A003EAB5C /* stopico.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F198B2B174DBA6A003EAB5C /* stopico.png */; };
 		7F198B2E174DBC9F003EAB5C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F198B2D174DBC9F003EAB5C /* CoreLocation.framework */; };
+		7F198B31174DC7BA003EAB5C /* BJHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F198B30174DC7BA003EAB5C /* BJHTTPClient.m */; };
+		7F198B34174ED919003EAB5C /* CUDeparture.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F198B33174ED918003EAB5C /* CUDeparture.m */; };
 		7F4C70F21738EC6E0098AC48 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F4C70F11738EC6E0098AC48 /* Cocoa.framework */; };
 		7F4C70FC1738EC6F0098AC48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F4C70FA1738EC6F0098AC48 /* InfoPlist.strings */; };
 		7F4C70FE1738EC6F0098AC48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4C70FD1738EC6F0098AC48 /* main.m */; };
@@ -33,6 +35,10 @@
 		7F198B28174DAC15003EAB5C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7F198B2B174DBA6A003EAB5C /* stopico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopico.png; sourceTree = "<group>"; };
 		7F198B2D174DBC9F003EAB5C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7F198B2F174DC7BA003EAB5C /* BJHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJHTTPClient.h; sourceTree = "<group>"; };
+		7F198B30174DC7BA003EAB5C /* BJHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJHTTPClient.m; sourceTree = "<group>"; };
+		7F198B32174ED916003EAB5C /* CUDeparture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUDeparture.h; sourceTree = "<group>"; };
+		7F198B33174ED918003EAB5C /* CUDeparture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUDeparture.m; sourceTree = "<group>"; };
 		7F4C70EE1738EC6E0098AC48 /* CUMTD Departures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CUMTD Departures.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F4C70F11738EC6E0098AC48 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		7F4C70F41738EC6E0098AC48 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -127,6 +133,10 @@
 				7F198B2B174DBA6A003EAB5C /* stopico.png */,
 				7F4C71031738EC6F0098AC48 /* CUAppDelegate.h */,
 				7F4C71041738EC6F0098AC48 /* CUAppDelegate.m */,
+				7F198B2F174DC7BA003EAB5C /* BJHTTPClient.h */,
+				7F198B30174DC7BA003EAB5C /* BJHTTPClient.m */,
+				7F198B32174ED916003EAB5C /* CUDeparture.h */,
+				7F198B33174ED918003EAB5C /* CUDeparture.m */,
 				7F4C71161738FE2B0098AC48 /* AFNetworking */,
 				7F4C71061738EC6F0098AC48 /* MainMenu.xib */,
 				7F4C70F81738EC6E0098AC48 /* Supporting Files */,
@@ -249,6 +259,8 @@
 				7F4C71301738FE2B0098AC48 /* AFURLConnectionOperation.m in Sources */,
 				7F4C71311738FE2B0098AC48 /* AFXMLRequestOperation.m in Sources */,
 				7F4C71321738FE2B0098AC48 /* UIImageView+AFNetworking.m in Sources */,
+				7F198B31174DC7BA003EAB5C /* BJHTTPClient.m in Sources */,
+				7F198B34174ED919003EAB5C /* CUDeparture.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +357,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CUMTD Departures/CUMTD Departures-Prefix.pch";
 				INFOPLIST_FILE = "CUMTD Departures/CUMTD Departures-Info.plist";
@@ -357,6 +370,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CUMTD Departures/CUMTD Departures-Prefix.pch";
 				INFOPLIST_FILE = "CUMTD Departures/CUMTD Departures-Info.plist";
