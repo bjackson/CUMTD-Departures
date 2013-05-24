@@ -21,12 +21,13 @@
 
 + (NSMutableArray *)initWithDeparturesDictionary:(NSDictionary *)dictionary
 {
-    NSMutableArray *departureArray;
+    NSMutableArray *departureArray = [[NSMutableArray alloc] init];
     for (NSDictionary *departureDict in dictionary)
     {
         [departureArray addObject:[[CUDeparture alloc] initOnlyOneWithDictionary:departureDict]];
 
     }
+
     return departureArray;
 }
 

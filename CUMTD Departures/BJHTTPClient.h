@@ -16,6 +16,6 @@
 + (BJHTTPClient *)sharedClient;
 
 + (NSDictionary *)parametersWithKey:(NSDictionary *)params;
-- (NSDictionary *)requestDeparturesByStop:(NSString *)stop_id;
+- (void)requestDeparturesByStop:(NSString *)stop_id;
 
 @end

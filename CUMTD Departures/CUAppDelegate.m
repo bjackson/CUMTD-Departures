@@ -32,12 +32,23 @@ static NSString *const BaseURLString = @"http://developer.cumtd.com/api/v2.2/jso
     
 }
 
+- (IBAction)showPopover:(id)sender
+{
+    [[self popover] showRelativeToRect:[sender bounds] ofView:sender preferredEdge:NSMaxYEdge];
+}
+
 - (IBAction)RefreshClicked:(id)sender
 {
     NSLog(@"Doing something");
-    NSDictionary *departures = [client requestDeparturesByStop:@"PLAZA"];
-    
-   
+    [client requestDeparturesByStop:@"PLAZA"];
+}
+
++ (void)updateDepartures:(NSMutableArray *)departures
+{
+    for (CUDeparture *departure in departures)
+    {
+        NSLog(@"%@", departure.destination);
+    }
 }
 
 - (void)awakeFromNib

@@ -1,3 +1,4 @@
+
 //
 //  BJHTTPClient.m
 //  CUMTD Departures
@@ -9,6 +10,7 @@
 #import "BJHTTPClient.h"
 #import "AFNetworking/AFNetworking.h"
 #import "CUDeparture.h"
+#import "CUAppDelegate.h"
 NSString * const BJAPIKey = @"b7e39526445d48318fcff9d2a041e73b";
 
 @implementation BJHTTPClient
@@ -45,18 +47,21 @@ NSString * const BJAPIKey = @"b7e39526445d48318fcff9d2a041e73b";
     return [NSDictionary dictionaryWithDictionary:intermediateDictionary];
 }
 
-- (NSMutableArray *)requestDeparturesByStop:(NSString *)stop_id
+- (void)requestDeparturesByStop:(NSString *)stop_id
 {
-    __block NSMutableArray *response;
+    __block NSMutableArray *departures;
+
     [self getPath:@"GetDeparturesByStop" parameters:[BJHTTPClient parametersWithKey:[NSDictionary dictionaryWithObject:stop_id forKey:@"stop_id"]]
           success:^(AFHTTPRequestOperation *operation, NSDictionary *responseObject) {
-              response = [CUDeparture initWithDeparturesDictionary:[responseObject objectForKey:@"departures"]];
+              departures = [CUDeparture initWithDeparturesDictionary:[responseObject objectForKey:@"departures"]];
+              [CUAppDelegate updateDepartures:departures];
           }
           failure:^(AFHTTPRequestOperation *operation, NSError *error) {
               NSLog(@"%@", [error description]);
           }];
     
-    return response;
+
+
 }
 
 @end

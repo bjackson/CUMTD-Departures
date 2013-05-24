@@ -13,6 +13,11 @@
 		7F198B2E174DBC9F003EAB5C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F198B2D174DBC9F003EAB5C /* CoreLocation.framework */; };
 		7F198B31174DC7BA003EAB5C /* BJHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F198B30174DC7BA003EAB5C /* BJHTTPClient.m */; };
 		7F198B34174ED919003EAB5C /* CUDeparture.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F198B33174ED918003EAB5C /* CUDeparture.m */; };
+		7F27DA57174F09650040E068 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F27DA56174F09650040E068 /* Icon-72@2x.png */; };
+		7F27DA59174F09C50040E068 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F27DA58174F09C50040E068 /* Icon-72.png */; };
+		7F27DA5B174F09D50040E068 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F27DA5A174F09D50040E068 /* Icon-72.png */; };
+		7F27DA5D174F0A7B0040E068 /* Icon-72@2x.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7F27DA5C174F0A7B0040E068 /* Icon-72@2x.icns */; };
+		7F27DA5F174F0A800040E068 /* Icon-72@2x.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7F27DA5E174F0A800040E068 /* Icon-72@2x.icns */; };
 		7F4C70F21738EC6E0098AC48 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F4C70F11738EC6E0098AC48 /* Cocoa.framework */; };
 		7F4C70FC1738EC6F0098AC48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F4C70FA1738EC6F0098AC48 /* InfoPlist.strings */; };
 		7F4C70FE1738EC6F0098AC48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4C70FD1738EC6F0098AC48 /* main.m */; };
@@ -39,6 +44,11 @@
 		7F198B30174DC7BA003EAB5C /* BJHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJHTTPClient.m; sourceTree = "<group>"; };
 		7F198B32174ED916003EAB5C /* CUDeparture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUDeparture.h; sourceTree = "<group>"; };
 		7F198B33174ED918003EAB5C /* CUDeparture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUDeparture.m; sourceTree = "<group>"; };
+		7F27DA56174F09650040E068 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		7F27DA58174F09C50040E068 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		7F27DA5A174F09D50040E068 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		7F27DA5C174F0A7B0040E068 /* Icon-72@2x.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "Icon-72@2x.icns"; sourceTree = "<group>"; };
+		7F27DA5E174F0A800040E068 /* Icon-72@2x.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "Icon-72@2x.icns"; sourceTree = "<group>"; };
 		7F4C70EE1738EC6E0098AC48 /* CUMTD Departures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CUMTD Departures.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F4C70F11738EC6E0098AC48 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		7F4C70F41738EC6E0098AC48 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -91,6 +101,8 @@
 		7F4C70E51738EC6E0098AC48 = {
 			isa = PBXGroup;
 			children = (
+				7F27DA5E174F0A800040E068 /* Icon-72@2x.icns */,
+				7F27DA5A174F09D50040E068 /* Icon-72.png */,
 				7F198B2D174DBC9F003EAB5C /* CoreLocation.framework */,
 				7F198B27174DAC15003EAB5C /* CoreServices.framework */,
 				7F198B28174DAC15003EAB5C /* SystemConfiguration.framework */,
@@ -147,6 +159,9 @@
 		7F4C70F81738EC6E0098AC48 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7F27DA5C174F0A7B0040E068 /* Icon-72@2x.icns */,
+				7F27DA58174F09C50040E068 /* Icon-72.png */,
+				7F27DA56174F09650040E068 /* Icon-72@2x.png */,
 				7F4C70F91738EC6F0098AC48 /* CUMTD Departures-Info.plist */,
 				7F4C70FA1738EC6F0098AC48 /* InfoPlist.strings */,
 				7F4C70FD1738EC6F0098AC48 /* main.m */,
@@ -238,6 +253,11 @@
 				7F4C71021738EC6F0098AC48 /* Credits.rtf in Resources */,
 				7F4C71081738EC6F0098AC48 /* MainMenu.xib in Resources */,
 				7F198B2C174DBA6A003EAB5C /* stopico.png in Resources */,
+				7F27DA57174F09650040E068 /* Icon-72@2x.png in Resources */,
+				7F27DA59174F09C50040E068 /* Icon-72.png in Resources */,
+				7F27DA5B174F09D50040E068 /* Icon-72.png in Resources */,
+				7F27DA5D174F0A7B0040E068 /* Icon-72@2x.icns in Resources */,
+				7F27DA5F174F0A800040E068 /* Icon-72@2x.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

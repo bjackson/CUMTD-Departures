@@ -14,6 +14,7 @@
 @interface CUAppDelegate : NSObject <NSApplicationDelegate, CLLocationManagerDelegate>
 {
     IBOutlet NSMenu *statusMenu;
+    IBOutlet NSView *departureView;
     NSStatusItem *statusItem;
     NSImage *statusImage;
     CLLocationManager *manager;
@@ -22,8 +23,11 @@
 }
 
 - (IBAction)RefreshClicked:(id)sender;
++ (void)updateDepartures:(NSMutableArray *)departures;
+- (IBAction)showPopover:(id)sender;
 
 
+@property (assign) IBOutlet NSPopover *popover;
 @property (retain) CLLocationManager *manager;
 
 //@property (assign) IBOutlet NSMenu *statusMenu;
